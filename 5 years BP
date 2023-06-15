@@ -1,0 +1,71 @@
+from pptx import Presentation
+from pptx.util import Inches
+
+# Create a presentation object
+prs = Presentation()
+
+# Slide 0 - Title Slide
+slide_0 = prs.slides.add_slide(prs.slide_layouts[0])
+title = slide_0.shapes.title
+title.text = "5-Year Business Plan"
+subtitle = slide_0.placeholders[1]
+subtitle.text = "Your Company Name"
+
+# Slide 1 - Executive Summary
+slide_1 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_1.shapes.title
+title.text = "Executive Summary"
+content = slide_1.placeholders[1]
+content.text = "Brief overview of the business plan."
+
+# Slide 2 - Company Description
+slide_2 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_2.shapes.title
+title.text = "Company Description"
+content = slide_2.placeholders[1]
+content.text = "Description of the company and what it does."
+
+# Slide 3 - Market Analysis
+slide_3 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_3.shapes.title
+title.text = "Market Analysis"
+content = slide_3.placeholders[1]
+content.text = "Market research, trends, target market, and competitors."
+
+# Slide 4 - Organization and Management
+slide_4 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_4.shapes.title
+title.text = "Organization and Management"
+content = slide_4.placeholders[1]
+content.text = "Company structure, ownership, and management team."
+
+# Slide 5 - Services or Products
+slide_5 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_5.shapes.title
+title.text = "Services or Products"
+content = slide_5.placeholders[1]
+content.text = "Description of the company's services or products."
+
+# Slide 6 - Marketing and Sales
+slide_6 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_6.shapes.title
+title.text = "Marketing and Sales"
+content = slide_6.placeholders[1]
+content.text = "Marketing strategy and sales plan."
+
+# Slide 7 - Financial Projections
+slide_7 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_7.shapes.title
+title.text = "Financial Projections"
+content = slide_7.placeholders[1]
+content.text = "Revenue, cost, and profit projections for the next 5 years."
+
+# Slide 8 - Funding Request
+slide_8 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_8.shapes.title
+title.text = "Funding Request"
+content = slide_8.placeholders[1]
+content.text = "Details about funding needs, if applicable."
+
+# Save the presentation
+prs.save('5_year_business_plan.pptx')
